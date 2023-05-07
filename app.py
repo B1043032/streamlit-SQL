@@ -12,8 +12,6 @@ query="""
    FROM job
 """
 Countries=list(con.execute(query).df().columns)[2:]
-countries = df['country'].unique()
-selected_country = st.selectbox('Select a country', countries)
 
 
 st.subheader('Investingation')
