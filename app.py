@@ -4,7 +4,7 @@ import streamlit as st
 import altair as alt
 import duckdb
 
-con = duckdb.connect(database='Job.db', read_only=True) 
+con = duckdb.connect(database='job.db', read_only=True) 
 
 # Countries
 query="""
