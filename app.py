@@ -45,3 +45,4 @@ chart = alt.Chart(result_df).mark_circle().encode(
     #color = 'carrier'
 ).interactive()
 st.altair_chart(chart, theme="streamlit", use_container_width=True)
+fig = px.line(df_grouped, x='date', y='count', color='country')
