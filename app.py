@@ -45,3 +45,5 @@ chart = alt.Chart(result_df).mark_circle().encode(
     #color = 'carrier'
 ).interactive()
 st.altair_chart(chart, theme="streamlit", use_container_width=True)
+countries = df['country'].unique()
+selected_country = st.selectbox('Select a country', countries)
